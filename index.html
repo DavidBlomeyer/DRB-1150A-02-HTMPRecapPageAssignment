@@ -7,27 +7,94 @@
     <title>DRB-1150A-02-HTMPRecapPageAssignment</title>
 </head>
 
-<nav style="text-align: right;">
+<nav style="text-align: right; background-color: lightgrey; padding: 10px;">
+    <image src="https://images.unsplash.com/photo-1580907114587-148483e7bd5f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGhlYWR8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+        alt="a small head"
+        width="64"
+        height="96";>
+    </image>
+    <p style="color: gold;">Nav Bar with a Head in It!</p>
     <a href="./index.html">Index</a>
     <a href="./01-one.html">One</a>
     <a href="./02-two.html">Two</a>
 </nav>
 
 <header>
-    <h1 style="text-align: center;">This is Header!</h1>
-    <img src="https://images.unsplash.com/photo-1542702937-506268e68902?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aGVhZHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-        alt="a head">
+    <h1 style="text-align: center;">This a is Head(er)!</h1>
+    <div style="text-align: center;">
+        <img src="https://images.unsplash.com/photo-1542702937-506268e68902?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aGVhZHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            alt="a head">
+
+        <p>*I had to do that inline using a div cause align is gone.</p>
+        <p>(And we aren't playing CSS yet.)</p>
+    </div>
 </header>
 
 <body>
-    <header>
-        <h2>This is ALSO header</h2>
-    </header>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/DvUAdqkEn9o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+    <div id="left" style="display: inline-block;width:45%;height:400px;float:left;">
+        <header>
+            <h2>This is also a "Header"</h2>
+        </header>
+        <p>In HTML, use of headers is a bit odd as header is not super-specfic, as it can mean a header to a page or a header to a section. In language at large, header, as term, is commonly used in HTML, carpentry, soccer, and automotive engines. It also has applications in innuendo. The above header is for this text followed by a embeded youtube video about headers (using iframe) in framing.</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/DvUAdqkEn9o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p>You may note that the video features a "headshot" of the author in it's navbar, because themes and the rule of three's.</p>
+    </div>
+
+    <div id="right" style="display:inline-block; width:45%; height:400px;float:right;">
+        <h2>A Final Header: Function</h2>
+        <p>They say "form follows function", so I am choosing to loosely interpret that as liscense to make a frame about function .... er .... form .... I mean headers.</p>
+        <form>
+            <fieldset>
+                <legend>Framing the Question</legend>
+                <p style="color: purple;">Tell the void your opinion!</p>
+                <legend>Identify Yourself</legend>
+                <p>
+                    <label>
+                        Name:
+                        <input name="name"  />
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        Email:
+                        <input type="email" name="email"  />
+                    </label>
+                    (so we can sell it for revenue!)
+                </p>
+                <p>
+                    <label for="opinion">Your Opinion Here:</label>
+                    <textarea id="opinion" name="opinion"></textarea>
+                </p>
+                <p>Do you feel better?</p>
+                <p>    
+                    <input type="radio" name="trinomial"
+                        id="yes0" value="yes0"  />
+                    <label for="yes0">Yes</label>
+                </p>
+                <p>
+                    <input type="radio" name="trinomial"
+                        id="no1" value="no1"  />
+                    <label for="no1">No</label>
+                </p>
+                <p>
+                    <input type="radio" name="trinomial"
+                        id="maybe3" value="maybe3"  />
+                    <label for="maybe3">Maybe</label>
+                </p>
+                <p>
+                    <button type="submit" style="font-size: large;">Send your message in a Bottle!</button>
+                </p>
+            </fieldset>
+
+        </form>
+    </div>
 </body>
 
-<footer style="background-color: grey;">
-    <p>Copyright &#169; 2021 Claimers</p>
+<br />
+
+<footer style="background-color: lightgray; padding: 10px; float:inline-end";>
+    <p>Copyright &#169; 2021 Avid Claimers</p>
     <p>
         <a href="#about">About Us</a> -
         <a href="#policy">Policy</a> -
